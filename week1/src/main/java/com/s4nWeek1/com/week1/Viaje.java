@@ -1,6 +1,11 @@
+/*
+ * clase que tiene los atributos de los
+ * viajes/vuelos de la aereolinea
+ */
+
+
 package com.s4nWeek1.com.week1;
 
-import java.util.List;
  
 
 public class Viaje {

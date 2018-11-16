@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -12,7 +13,7 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.*;
 import static java.lang.Math.toIntExact;
 
-public class AereolineaTest {
+public class AereolineaLamdaTest {
  static Aereolinea aereolinea;
  static Persona persona;
  static List < Persona > Personas;
@@ -23,11 +24,14 @@ public class AereolineaTest {
   persona = new Persona();
   Personas = new ArrayList <> ();
 
-  aereolinea.agregarPersona("Sebastian", "masc", (long) 123);
+
+  aereolinea.agregarPersona("Juan", "masc", (long) 123,(long)7686880,null,
+		  Optional.ofNullable("Soltero"),Optional.ofNullable(4),null);
   aereolinea.agregarViaje((long) 123, "miami", 22.0, "12/12/12");
   aereolinea.agregarViaje((long) 123, "miami", 23.0, "12/12/12");
 
-  aereolinea.agregarPersona("johann", "masc", (long) 456);
+  aereolinea.agregarPersona("Marcos", "masc", (long) 456,null,
+		  null,Optional.ofNullable("Casado"),Optional.ofNullable(0),null);
   aereolinea.agregarViaje((long) 456, "miami", 1.0, "12/12/12");
   aereolinea.agregarViaje((long) 456, "miami", 2.0, "12/12/12");
 

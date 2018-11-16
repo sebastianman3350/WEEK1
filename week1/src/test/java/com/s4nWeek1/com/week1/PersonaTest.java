@@ -1,7 +1,6 @@
 package com.s4nWeek1.com.week1;
 
 import static org.junit.Assert.*;
-import org.junit.*;
 
 import org.junit.BeforeClass;
 import org.junit.Test;

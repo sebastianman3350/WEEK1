@@ -90,7 +90,13 @@ public class Interfaz {
                 	+" Viajes Asignados****\n"); 
                     break;
                 case 5: 
-                	System.out.println("Cantidad de dinero vendido por la aereolinea: $" + aereolinea.mostrarCantidadDineroVendidos()); 
+//                	System.out.println("Cantidad de dinero vendido por la aereolinea: $" +
+//                			aereolinea.mostrarCantidadDineroVendidos()); 
+                	
+                	System.out.println("Cantidad de dinero vendido por la aereolinea: $" +
+                			aereolinea.mostrarCantidadDineroVendidosInterface());
+                	
+                	
                     break;    
                 case 6: 
                 	System.out.println("La aereolinea a vendido " + aereolinea.mostrarCantidadViajesVendidos()
@@ -125,7 +131,7 @@ public class Interfaz {
                     nombre = sc.next();
                     System.out.println("Por favor ingrese el género:");
                     genero = sc.next();
-                	aereolinea.agregarPersona(nombre,genero,id);
+                	aereolinea.agregarPersona(nombre,genero,id,null,null,null,null,null);
                     break;
                 case 2: 
                 	System.out.println("Por favor ingrese el número de cedula:");
